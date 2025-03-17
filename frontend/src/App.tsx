@@ -1,19 +1,20 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
-import { Button } from "./components/ui/button";
+import Header from "./components/layouts/Header";
 
 export default function App() {
   return (
-    <header>
-      <SignedOut>
-        <SignInButton>
-          <Button>
-            Sign in
-          </Button>
-        </SignInButton>
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </header>
+    <>
+      <div
+        className="grid grid-cols-2 
+        grid-rows-[65px_auto_65px] 
+        w-screen h-screen bg-black"
+      >
+        <div className="col-span-full h-full w-full">
+          <Header />
+        </div>
+        <div className="bg-gray-800 row-span">SideBar</div>
+        <div className="">Content</div>
+        <div className="col-span-full">Footer</div>
+      </div>
+    </>
   );
 }
