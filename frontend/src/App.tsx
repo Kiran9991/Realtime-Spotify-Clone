@@ -5,7 +5,7 @@ export default function App() {
     <>
       <div
         className="grid grid-cols-2 
-        grid-rows-[65px_auto_65px] 
+        grid-rows-[12%_auto_12%] 
         w-screen h-screen bg-black"
       >
         <div className="col-span-full h-full w-full">
